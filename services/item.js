@@ -13,7 +13,7 @@ async function create(item) {
 }
 
 function getById(id){
-    return Item.findById(id);;
+    return Item.findById(id).populate('owner', 'username');
 }
 
 async function update(id, item) {

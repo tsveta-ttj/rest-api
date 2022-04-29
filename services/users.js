@@ -67,7 +67,7 @@ function verifySession(token) {
 
     return {
         email: payload.email,
-        username: payload.email,
+        username: payload.username,
         _id: payload._id,
         token
     };
